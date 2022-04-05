@@ -1,6 +1,4 @@
 # Ex-02_DS_Outlier
-[8:57 am, 05/04/2022] Prethvieeee Sec: ## Ex-02_DS_Outlier
-## AIM:
 To detect and remove outliers from the given data and save the final data.
 
 EXPLANATION:
@@ -30,8 +28,7 @@ Apply Statistical Method "Interquartile Range(IQR)" ,to remove the Outliers from
 Developed By:SYED MUHAMMED ZAHI
 
 Register No: 212221230114
-`
-
+~~~
 import pandas as pd
 df=pd.read_csv("weight.csv")
 df
@@ -41,7 +38,6 @@ df.boxplot()
 from scipy import stats
 import numpy as np
 z=np.abs(stats.zscore(df))
-z
 df1=df.copy()
 df1=df1[(z<3).all(axis=1)]
 df1
@@ -52,13 +48,13 @@ q3=df2.quantile(0.75)
 IQR=q3-q1
 df2_new=df2[((df2>=q1-1.5*IQR)&(df2<=q3+1.5*IQR)).all(axis=1)]
 df2_new
+~~~
 
 ## OUTPUT:
 ## Initial data set:
 ![output](ot2.png)
 ## Data set after removing non numerical sets:
 ![output](ot3.png)
-
 ## Graph displaying initial dataset with outliers:
 ![output](ot4.png)
 ## Z scores to detect outliers:
@@ -72,9 +68,6 @@ df2_new
 ## Final graph after removing all outliers:
 ![output](ot10.png)
 ## Final data set:
-
 ![output](ot11.png)
-
-
 ## Result:
 The Outliers are detected and removed from the Dataset
