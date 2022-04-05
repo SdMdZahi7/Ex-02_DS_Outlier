@@ -52,22 +52,22 @@ df2_new
 
 ## OUTPUT:
 ## Initial data set:
-![output](ot2.png)
+![output](ot1.png)
 ## Data set after removing non numerical sets:
-![output](ot3.png)
+![output](ot2.png)
 ## Graph displaying initial dataset with outliers:
-![output](ot4.png)
+![output](ot3.png)
 ## Z scores to detect outliers:
-![output](ot5.png)
+![output](ot4.png)
 ## Data set after removing outliers in weight using z scores and list manupilation:
-![output](ot6.png)
+![output](ot5.png)
 ## Graph after removing outliers in weight:
-![output](ot7.png)
+![output](ot6.png)
 ## Data set after removing outliers in height using Interquartile Range(IQR):
-![output](ot9.png)
+![output](ot7.png)
 ## Final graph after removing all outliers:
-![output](ot10.png)
+![output](ot8.png)
 ## Final data set:
-![output](ot11.png)
+![output](ot9.png)
 ## Result:
 The Outliers are detected and removed from the Dataset
